@@ -56,9 +56,9 @@ git push origin master
                 </th>
                 <th width="80%" align="left" valign="top">
                     <input type="radio" name="hyouka" value="good">選択肢1<br>
-                    <input type="radio" name="hyouka" value="good">選択肢1<br>
-                    <input type="radio" name="hyouka" value="good">選択肢1<br>
-                    <input type="radio" name="hyouka" value="good">選択肢1
+                    <input type="radio" name="hyouka" value="good">選択肢2<br>
+                    <input type="radio" name="hyouka" value="good">選択肢3<br>
+                    <input type="radio" name="hyouka" value="good">選択肢4
                 </th>
                 </tr>
             </table>
@@ -68,16 +68,20 @@ git push origin master
       <th width="45%">
           <div class="count">
               <div align="left">カウンタ</div>
-              <div class="remain-sec">あと10秒</div>
-              <meter max="100" value="10">10%</meter>
+              <div class="remain-sec">あと  <span id="sec" class="20">20</span> 秒</div>
+              <meter id="gauge" max="100" value="0"></meter>
           </div>
       </th>
     </tr>
 </table>
 
 
-<div class="quiz" align="center">
+<div class="quiz" align="center" id="messege">
     メッセージエリア<br/>
+</div>
+
+<div class="btnWrap" align="center">
+    <a href="#" class="btn">答える</a>
 </div>
 
 
@@ -85,6 +89,31 @@ git push origin master
 <footer>
     <p>© All rights reserved by tsutsumi.</p>
 </footer>
+
+
+<script>
+    var countSec = setInterval('countDown()',1000);
+    var countGauge = setInterval('decreaseGauge()',10);
+    function countDown(){
+        var old_sec = parseFloat(document.getElementById('sec').innerHTML);
+        document.getElementById('sec').innerHTML = old_sec-1;
+        if(old_sec == 1){
+            document.getElementById('messege').innerHTML = "終了しました。";
+            stopTimer();
+        }
+    }
+    function decreaseGauge(){
+        var oldValue = document.getElementById('gauge').value;
+        var moto = parseFloat(document.getElementById('sec').className);
+        document.getElementById('gauge').value = oldValue + 1.0/moto;
+    }
+    function stopTimer(){
+        clearInterval(countSec);
+    }
+
+</script>
+
+
 
 </body>
 </html>
