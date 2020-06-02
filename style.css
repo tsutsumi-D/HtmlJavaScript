@@ -27,12 +27,27 @@ header .headline{
   margin: 0 20px;
 }
 
-body {
-  margin: 3em;
+.head-ahead{
+  /*border:solid*/
+  float: right;
+  border: 1px solid #aaa;
+  width: 400px;
+  text-align: center;  
 }
 
 .table1-pageExplanation{
-  margin: 2em;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%; 
+}
+
+.table2-quiz{
+
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%; 
 }
 
 footer {
@@ -42,10 +57,54 @@ footer {
   padding: 50px 0;
   background-color: #cab64a;
 }
+
+
+.quiz{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid #333333;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.waku{
+  border: solid #333333;
+  margin-left: 2%;
+  padding: 5%;
+}
+
+.choice{
+
+}
+
+.remain-sec{
+  margin-top: 1.9%;
+  margin-bottom: 1.9%;
+}
+
+.choice-area {
+  border: solid #333333;
+  margin-right: 1%;
+}
+.count{
+  border: solid #333333;
+  margin-left: 1%;
+}
+
 .footer-text {
   color: #fff;
 }
 
+.remain-sec{
+  border: solid #333333;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 table, th, td {
   border:none;
+  border: 0px solid black;
 }
+

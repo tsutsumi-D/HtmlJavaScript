@@ -14,6 +14,7 @@ git push origin master
 </head>
 
 <body>
+    
 <!-- header -->
 <header>
     <h1 class="headline">
@@ -26,21 +27,63 @@ git push origin master
 </header>
 
 <!-- 内容 -->
-<table border="1"  width="90%" class="table1-pageExplanation">
+<table border="1"  width="96%" class="table1-pageExplanation">
     <tr>
       <th width=20%">
-        <img src="image/002.png" width="250em">
+        <img src="image/002.png" width="100%">
       </th>
       <th width="80%">
-          このページは群馬県桐生市に関するクイズを出題するページです。
+          <div class="waku">このページは群馬県桐生市に関するクイズを出題するページです。</div>
+          
+      </th>
+    </tr>
+</table>
+
+<div class="quiz">
+    Q:それでは問題です。<br/>
+    ****は、**********ですか？<br/>
+    以下の選択しから選びなさい
+</div>
+
+<table width="96%" class="table2-quiz">
+    <tr>
+      <th width=55%">
+        <div class="choice-area">
+            <table width="100%">
+                <tr>
+                <th width="20%" valign="top">
+                    <div class="choice">選択肢:</div>
+                </th>
+                <th width="80%" align="left" valign="top">
+                    <input type="radio" name="hyouka" value="good">選択肢1<br>
+                    <input type="radio" name="hyouka" value="good">選択肢1<br>
+                    <input type="radio" name="hyouka" value="good">選択肢1<br>
+                    <input type="radio" name="hyouka" value="good">選択肢1
+                </th>
+                </tr>
+            </table>
+        </div>
+      </th>
+      
+      <th width="45%">
+          <div class="count">
+              <div align="left">カウンタ</div>
+              <div class="remain-sec">あと10秒</div>
+              <meter max="100" value="10">10%</meter>
+          </div>
       </th>
     </tr>
 </table>
 
 
+<div class="quiz" align="center">
+    メッセージエリア<br/>
+</div>
+
+
 <!-- footer -->
 <footer>
-    <p>© All rights reserved by webcampnavi.</p>
+    <p>© All rights reserved by tsutsumi.</p>
 </footer>
 
 </body>
