@@ -80,8 +80,8 @@ footer {
 }
 
 .remain-sec{
-  margin-top: 1.9%;
-  margin-bottom: 1.9%;
+  margin-top: 2.7%;
+  margin-bottom: 2.7%;
 }
 
 .choice-area {
@@ -110,16 +110,4 @@ footer {
 table, th, td {
   border:none;
   border: 0px solid black;
-}
-
-.btn {
-  background: salmon; /* 背景色 */
-  color: #fff; /* 文字色 */
-  padding: 16px 40px; /* 上下の余白、左右の余白 */
-  text-decoration: none; /* デフォルトで入る下線を消す */
-  border-radius: 30px; /* 角を丸くする */
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 100%;
-  margin-bottom: 100%;
 }
